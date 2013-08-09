@@ -64,7 +64,7 @@ class Event
 ####
 
   def _check_holiday(date)
-    date.national_holiday?
+    date.to_date.national_holiday?
   end
 
   def _get_first(date, business_day)
