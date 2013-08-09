@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require 'gcalgen'
+include Gcalgen
+
+if ARGV.size < 1
+  print "Google Calendar event generator - version #{VERSION}\n"
+  print "Usage:\n  gcalgen datafile1 [datafile2 ....]\n"
+  exit 1
+end
+
+#
+# load ~/.gcalgenrc
+#
+$myConfig = { }
+load File.expand_path('~/.gcalgenrc')
+
+#
+# execute calendar
+#
+ ARGV.each { |datafile|
+   load datafile
+ }
