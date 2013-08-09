@@ -1,8 +1,6 @@
 require 'gcalapi'
 require 'active_support/time'
-require 'calendar/japanese/holiday'
-
-require 'pry'
+require 'holiday_japan'
 
 class Event
   attr_accessor :title, :start_time, :end_time, :desc, :main_method, :sub_method, :date, :location, :range_begins, :range_ends, :allday, :every
@@ -66,8 +64,7 @@ class Event
 ####
 
   def _check_holiday(date)
-    d = date.to_date.extend Calendar::Japanese::Holiday
-    d.holiday?
+    d.national_holiday?
   end
 
   def _get_first(date, business_day)
