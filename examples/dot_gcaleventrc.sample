@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+
+def_calendar "default" do
+  feed  'http://www.google.com/calendar/feeds/XXXXXXXXXXXXXX@group.calendar.google.com/private/full'
+  user  'XXXXXXXXXXXXX@gmail.com'
+  password   'XXXXXXXXXXXXXXX'
+end
+
+def_calendar "home public" do
+  feed  'http://www.google.com/calendar/feeds/XXXXXXXXXXXXXX@group.calendar.google.com/private/full'
+  user  'XXXXXXXXXXXXX@gmail.com'
+  password   'XXXXXXXXXXXXXXX'
+end
+

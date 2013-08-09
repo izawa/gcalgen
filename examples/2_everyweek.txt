@@ -1,0 +1,14 @@
+
+event "定期ミーティング" do
+      at "北陸支社"
+      starts "13:00"
+
+      every "week" do
+      	    wday "monday"
+	    business_day # 平日指定
+	    shift_enable # 平日になるまで翌日にシフトする
+      end
+
+      range_begins "2013/08"
+      range_ends "2013/10"
+end

@@ -1,0 +1,9 @@
+event "birthday party" do
+      on "12/19"
+      starts "20:00"
+      every "year"
+      range_begins "2013/11/01"
+      range_ends   "2015/09/01"
+end
+
+            	          	    

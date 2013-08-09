@@ -10,9 +10,30 @@ Add this line to your application's Gemfile:
 
 and create ~/.gcalgenrc
 
+
+## .gcalgenrc
+
+   def_calendar "default" do  # <-- "default" entry is required
+   		feed  'http://www.google.com/calendar/feeds/XXXXXXXXXXXXXXXXXXXX@group.calendar.google.com/private/full'
+		user  'XXXXXXXXXXXXX@gmail.com'
+		password  'XXXXXXXXXXXXX'
+   end
+
+   def_calendar "another calendar" do
+   		feed  'http://www.google.com/calendar/feeds/XXXXXXXXXXXXXXXXXXXX@group.calendar.google.com/private/full'
+		user  'XXXXXXXXXXXXX@gmail.com'
+		password  'XXXXXXXXXXXXX'
+   end
+
+   
 ## Usage
 
     % gcalgen eventfile1 [eventfile2....]
+
+
+## Event file syntax
+
+   ref, https://github.com/izawa/gcalgen/tree/master/examples
 
 ## Contributing
 

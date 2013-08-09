@@ -1,0 +1,13 @@
+
+event "月次報告書作成" do
+      desc "月末最終営業日に報告書を作成する"
+      all_day
+
+      every "month" do
+      	    last
+	    business_day
+      end
+
+      range_begins "2013/08/01"
+      range_ends   "2013/09/01"
+end
