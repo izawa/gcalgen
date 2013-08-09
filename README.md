@@ -4,12 +4,11 @@ Google calendar event generator
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Install with gem command like below
 
     gem install gcalgen
 
 and create ~/.gcalgenrc
-
 
 ## .gcalgenrc
 
@@ -33,7 +32,7 @@ and create ~/.gcalgenrc
 
 ## Event file syntax
 
-    ref, https://github.com/izawa/gcalgen/tree/master/examples
+    ref, https://github.com/izawa/gcalgen/tree/master/examples/
 
 ## Contributing
 
