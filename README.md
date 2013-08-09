@@ -13,17 +13,17 @@ and create ~/.gcalgenrc
 
 ## .gcalgenrc
 
-   def_calendar "default" do  # <-- "default" entry is required
+    def_calendar "default" do  # <-- "default" entry is required
    		feed  'http://www.google.com/calendar/feeds/XXXXXXXXXXXXXXXXXXXX@group.calendar.google.com/private/full'
 		user  'XXXXXXXXXXXXX@gmail.com'
 		password  'XXXXXXXXXXXXX'
-   end
+    end
 
-   def_calendar "another calendar" do
+    def_calendar "another calendar" do
    		feed  'http://www.google.com/calendar/feeds/XXXXXXXXXXXXXXXXXXXX@group.calendar.google.com/private/full'
 		user  'XXXXXXXXXXXXX@gmail.com'
 		password  'XXXXXXXXXXXXX'
-   end
+    end
 
    
 ## Usage
@@ -33,7 +33,7 @@ and create ~/.gcalgenrc
 
 ## Event file syntax
 
-   ref, https://github.com/izawa/gcalgen/tree/master/examples
+    ref, https://github.com/izawa/gcalgen/tree/master/examples
 
 ## Contributing
 
